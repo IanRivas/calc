@@ -1,0 +1,73 @@
+main{
+    width: 90%;
+    height: 65vh;
+    margin: 17px auto;
+    background-color: var(--BGin);
+    display: grid;
+    border-radius: 10px;
+    justify-content: center;
+    grid-template-columns: repeat(4,20%);
+    gap: 16px;
+    padding: 20px;
+    color: var(--mainfont);
+}
+main .boton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+main .boton:hover{
+    cursor: pointer;
+}
+
+main .boton .num {
+    width: 100%;
+    height: 90%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--NumBtn);
+    border-radius: 5px;
+    padding-top: 5px;
+}
+
+main .reset .num, main .del .num {
+    font-size: 1.8rem;
+    color: #FFFFFF;
+    background-color: var(--Reset);
+}
+
+main .reset {
+    grid-column: 1/3;
+    grid-row: 5/6;
+}
+main .igual {
+    grid-column: 3/5;
+    grid-row: 5/6;
+}
+main .igual .num{
+    font-size: 1.8rem;
+    color: var(--igualfont);
+    background-color: var(--Igual);
+}
+
+main .boton .boton-abajo{
+    width: 100%;
+    height: 15px;
+    z-index: 1;
+    position: absolute;
+    bottom: -2px;
+    border-radius: 5px;
+    background-color: var(--NumSombra);
+}
+main .igual .boton-abajo{
+    background-color: var(--IgualSombra);
+    bottom: -3px;
+}
+main .reset .boton-abajo, main .del .boton-abajo{
+    background-color: var(--ResetSombra);
+    bottom: -3px;
+}

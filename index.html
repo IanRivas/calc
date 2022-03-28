@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="./assets/images/logo-calc.png" />
+  <title>Calc</title>
+  <link rel="stylesheet" href="./styles/index.css">
+</head>
+
+<body>
+  <header>
+    <h2>calc</h2>
+    <div class="switch">
+      <h3>THEME</h3>
+      <div class="switch-container">
+        <div class="switch-numbers">
+          <span>1</span>
+          <span>2</span>
+          <span>3</span>
+        </div>
+        <div class="container-btnRojo">
+          <button class="activo" id="theme1"></button>
+          <button id="theme2"></button>
+          <button id="theme3"></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="pantalla">
+    <div id="ansContainer"></div>
+    <p id="pantalla-calc"></p>
+    <div></div>
+  </div>
+
+  <main>
+    <div class="boton" id="siete">
+      <div class="num">
+        <span>7</span>
+      </div>
+      <div class="boton-abajo"></div>
+    </div>
+    <div class="boton" id="ocho">
+      <div class="num">
+        <span>8</span>
+      </div>
+      <div class="boton-abajo"></div>
+    </div>
+    <div class="boton" id="nueve">
+      <div class="num">
+        <span>9</span>
+      </div>
+      <div class="boton-abajo"></div>
+    </div>
+    <div class="boton del" id="del">
+      <div class="num">
+        <span>DEL</span>
+      </div>
+      <div class="boton-abajo"></div>
+    </div>
+    <div class="boton" id="cuatro">
+      <div class="num">
+        <span>4</span>
+      </div>
+      <div class="boton-abajo"></div>
+    </div>
+    <div class="boton" id="cinco">
+      <div class="num">
+        <span>5</span>
+      </div>
+      <div class="boton-abajo"></div>
+    </div>
+    <div class="boton" id="seis">
+      <div class="num">
+        <span>6</span>
+      </div>
+      <div class="boton-abajo"></div>
+    </div>
+    <div class="boton" id="suma">
+      <div class="num">
+        <span>+</span>
+      </div>
+      <div class="boton-abajo"></div>
+    </div>
+    <div class="boton" id="uno">
+      <div class="num">
+        <span>1</span>
+      </div>
+      <div class="boton-abajo"></div>
+    </div>
+    <div class="boton" id="dos">
+      <div class="num">
+        <span>2</span>
+      </div>
+      <div class="boton-abajo"></div>
+    </div>
+    <div class="boton" id="tres">
+      <div class="num">
+        <span>3</span>
+      </div>
+      <div class="boton-abajo"></div>
+    </div>
+    <div class="boton" id="resta">
+      <div class="num">
+        <span>-</span>
+      </div>
+      <div class="boton-abajo"></div>
+    </div>
+    <div class="boton" id="punto">
+      <div class="num">
+        <span>.</span>
+      </div>
+      <div class="boton-abajo"></div>
+    </div>
+    <div class="boton" id="cero">
+      <div class="num">
+        <span>0</span>
+      </div>
+      <div class="boton-abajo"></div>
+    </div>
+    <div class="boton" id="division">
+      <div class="num">
+        <span>÷</span>
+      </div>
+      <div class="boton-abajo"></div>
+    </div>
+    <div class="boton" id="multiplicar">
+      <div class="num">
+        <span>x</span>
+      </div>
+      <div class="boton-abajo"></div>
+    </div>
+    <div class="boton reset" id="reset">
+      <div class="num">
+        <span>RESET</span>
+      </div>
+      <div class="boton-abajo"></div>
+    </div>
+    <div class="boton igual" id="igual">
+      <div class="num">
+        <span>=</span>
+      </div>
+      <div class="boton-abajo"></div>
+    </div>
+  </main>
+  <script src="./Javascript/botones.js" type="module"></script>
+  <script src="./Javascript/calculator.js" type="module"></script>
+  <script src="./Javascript/theme.js"></script>
+</body>
+
+</html>

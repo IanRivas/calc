@@ -1,0 +1,40 @@
+.pantalla{
+    width: 90%;
+    height: 90px;
+    border-radius: 10px;
+    margin:auto;
+    background-color: var(--BGpantalla);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    color: var(--pantallafont);
+}
+.pantalla :first-child{
+    width: 90%;
+    text-align:right;
+    height: 20px;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    font-size: 2rem;
+}
+
+.pantalla p{
+    text-align: right;
+    padding-top: 5px;
+    padding-right: 2px;
+}
+.pantalla :last-child{
+    width: 10%;
+    height: 40px;
+    border-left: var(--pantallafont) solid 2px;
+    animation: cursor 1s linear infinite; 
+}
+
+
+@keyframes cursor {
+    to{
+        border-left: transparent;
+    }
+}
